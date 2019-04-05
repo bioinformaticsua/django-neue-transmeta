@@ -7,11 +7,20 @@ from django.db.models.fields import NOT_PROVIDED
 from django.conf import settings
 from django.utils.encoding import python_2_unicode_compatible
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.translation import get_language, ugettext_lazy as _
+from django.utils.translation import get_language as django_get_language
+from django.utils.translation import ugettext_lazy as _
 
 
 LANGUAGE_CODE = 0
 LANGUAGE_NAME = 1
+
+
+def get_language():
+    lang = django_get_language()
+    if lang:
+        return lang
+    else:
+        return settings.LANGUAGE_CODE
 
 
 def get_languages():
