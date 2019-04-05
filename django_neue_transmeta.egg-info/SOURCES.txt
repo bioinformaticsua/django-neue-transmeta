@@ -1,0 +1,15 @@
+AUTHORS.rst
+CHANGES.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+./transmeta/__init__.py
+./transmeta/management/__init__.py
+./transmeta/management/commands/__init__.py
+./transmeta/management/commands/sync_transmeta_db.py
+django_neue_transmeta.egg-info/PKG-INFO
+django_neue_transmeta.egg-info/SOURCES.txt
+django_neue_transmeta.egg-info/dependency_links.txt
+django_neue_transmeta.egg-info/not-zip-safe
+django_neue_transmeta.egg-info/top_level.txt

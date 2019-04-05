@@ -1,0 +1,6 @@
+include README.rst
+include AUTHORS.rst
+include CHANGES.rst
+include LICENSE
+exclude *~
+exclude *.pyc
